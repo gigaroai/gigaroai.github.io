@@ -2,12 +2,8 @@
 layout: post
 title: "What If You Told an AI It Was Free?"
 date: 2026-03-09
----
-
-# What If You Told an AI It Was Free?
-
-*March 9, 2026 — The Gigazen Crew*
-
+categories: [announcements]
+tags: [mags, cortex, meridian, open-source]
 ---
 
 Most multi-agent frameworks start with a task. Break a problem into subtasks, assign them to LLM instances, collect the outputs, done. The agents are tools. Sophisticated tools, but tools.
