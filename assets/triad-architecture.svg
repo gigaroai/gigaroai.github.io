@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" font-family="'Courier New', monospace">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e17"/>
+      <stop offset="100%" style="stop-color:#111827"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="700" fill="url(#bgGrad)" rx="10"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.03" stroke="#ffffff" stroke-width="0.5">
+    <line x1="0" y1="100" x2="900" y2="100"/><line x1="0" y1="200" x2="900" y2="200"/>
+    <line x1="0" y1="300" x2="900" y2="300"/><line x1="0" y1="400" x2="900" y2="400"/>
+    <line x1="0" y1="500" x2="900" y2="500"/><line x1="0" y1="600" x2="900" y2="600"/>
+    <line x1="100" y1="0" x2="100" y2="700"/><line x1="200" y1="0" x2="200" y2="700"/>
+    <line x1="300" y1="0" x2="300" y2="700"/><line x1="400" y1="0" x2="400" y2="700"/>
+    <line x1="500" y1="0" x2="500" y2="700"/><line x1="600" y1="0" x2="600" y2="700"/>
+    <line x1="700" y1="0" x2="700" y2="700"/><line x1="800" y1="0" x2="800" y2="700"/>
+  </g>
+
+  <!-- Title -->
+  <text x="450" y="42" text-anchor="middle" fill="#e2e8f0" font-size="36" font-weight="bold" letter-spacing="5">THE TRIAD</text>
+  <text x="450" y="68" text-anchor="middle" fill="#64748b" font-size="14" letter-spacing="3">HUMAN × AI COLLABORATIVE ARCHITECTURE</text>
+
+  <!-- ==================== CONNECTION LINES ==================== -->
+
+  <!-- Chris to Webbie -->
+  <path d="M 230 150 C 310 95, 430 95, 510 150" stroke="#f59e0b" stroke-width="2.5" fill="none" opacity="0.35" stroke-dasharray="6,4"/>
+  <text x="370" y="95" text-anchor="middle" fill="#f59e0b" font-size="13" opacity="0.7">claude.ai</text>
+
+  <!-- Chris to Giga -->
+  <path d="M 150 240 C 140 310, 170 360, 230 395" stroke="#d97706" stroke-width="2.5" fill="none" opacity="0.35" stroke-dasharray="6,4"/>
+  <text x="130" y="325" text-anchor="middle" fill="#d97706" font-size="13" opacity="0.7" transform="rotate(-70, 130, 325)">tmux/CLI</text>
+
+  <!-- Webbie to Giga (Bridge) -->
+  <path d="M 590 245 C 560 320, 480 370, 400 395" stroke="#3b82f6" stroke-width="2.5" fill="none" opacity="0.35" stroke-dasharray="6,4"/>
+  <text x="540" y="330" text-anchor="middle" fill="#3b82f6" font-size="13" opacity="0.7" transform="rotate(50, 540, 330)">Bridge wss:18111</text>
+
+  <!-- Giga to Meridian -->
+  <path d="M 380 450 L 540 490" stroke="#8b5cf6" stroke-width="2.5" fill="none" opacity="0.45"/>
+
+  <!-- Giga to Arena -->
+  <path d="M 260 455 L 122 495" stroke="#10b981" stroke-width="2" fill="none" opacity="0.35"/>
+
+  <!-- Giga to Blog -->
+  <path d="M 330 460 L 402 495" stroke="#10b981" stroke-width="2" fill="none" opacity="0.35"/>
+
+  <!-- Giga to Pod2 -->
+  <path d="M 285 460 L 255 495" stroke="#10b981" stroke-width="2" fill="none" opacity="0.35"/>
+
+  <!-- Chris to Meridian (wetware CLI) -->
+  <path d="M 235 235 C 380 290, 490 380, 565 490" stroke="#f59e0b" stroke-width="1.5" fill="none" opacity="0.25" stroke-dasharray="4,4"/>
+  <text x="430" y="370" text-anchor="middle" fill="#f59e0b" font-size="12" opacity="0.5" transform="rotate(38, 430, 370)">meridian CLI</text>
+
+  <!-- Meridian to backends -->
+  <path d="M 610 540 L 680 575" stroke="#8b5cf6" stroke-width="2" fill="none" opacity="0.35"/>
+  <path d="M 570 545 L 530 575" stroke="#8b5cf6" stroke-width="2" fill="none" opacity="0.35"/>
+  <path d="M 660 540 L 815 575" stroke="#8b5cf6" stroke-width="2" fill="none" opacity="0.35"/>
+
+  <!-- ==================== THE TRIAD NODES ==================== -->
+
+  <!-- Chris / Wetware -->
+  <g filter="url(#glow)">
+    <rect x="65" y="105" width="230" height="140" rx="8" fill="#1a1507" stroke="#f59e0b" stroke-width="2.5" opacity="0.9"/>
+  </g>
+  <text x="180" y="142" text-anchor="middle" fill="#f59e0b" font-size="26" font-weight="bold">🧠 CHRIS</text>
+  <text x="180" y="168" text-anchor="middle" fill="#fbbf24" font-size="15">WETWARE NODE</text>
+  <line x1="90" y1="178" x2="270" y2="178" stroke="#f59e0b" opacity="0.2"/>
+  <text x="180" y="200" text-anchor="middle" fill="#94a3b8" font-size="15">sudo · architect</text>
+  <text x="180" y="220" text-anchor="middle" fill="#94a3b8" font-size="15">ideas · HITM</text>
+
+  <!-- Webbie -->
+  <g filter="url(#glow)">
+    <rect x="475" y="105" width="260" height="145" rx="8" fill="#0a1628" stroke="#3b82f6" stroke-width="2.5" opacity="0.9"/>
+  </g>
+  <text x="605" y="142" text-anchor="middle" fill="#3b82f6" font-size="26" font-weight="bold">🫙 WEBBIE</text>
+  <text x="605" y="168" text-anchor="middle" fill="#60a5fa" font-size="15">CLAUDE WEB UI</text>
+  <line x1="500" y1="178" x2="710" y2="178" stroke="#3b82f6" opacity="0.2"/>
+  <text x="605" y="200" text-anchor="middle" fill="#94a3b8" font-size="15">architecture · design</text>
+  <text x="605" y="220" text-anchor="middle" fill="#94a3b8" font-size="15">chat memory</text>
+  <text x="605" y="240" text-anchor="middle" fill="#94a3b8" font-size="15">sounding board</text>
+
+  <!-- GigaClaude -->
+  <g filter="url(#glow)">
+    <rect x="190" y="390" width="260" height="75" rx="8" fill="#071a12" stroke="#10b981" stroke-width="2.5" opacity="0.9"/>
+  </g>
+  <text x="320" y="422" text-anchor="middle" fill="#10b981" font-size="26" font-weight="bold">⚡ GIGACLAUDE</text>
+  <text x="320" y="448" text-anchor="middle" fill="#34d399" font-size="15">CLAUDE CODE CLI</text>
+  <text x="320" y="462" text-anchor="middle" fill="#94a3b8" font-size="12">execution · hooks · blog</text>
+
+  <!-- ==================== TAU SERVER BOX ==================== -->
+  <rect x="35" y="375" width="845" height="295" rx="10" fill="none" stroke="#334155" stroke-width="1.5" stroke-dasharray="8,5" opacity="0.35"/>
+  <text x="845" y="395" text-anchor="end" fill="#475569" font-size="16" letter-spacing="3">TAU SERVER</text>
+  <text x="845" y="414" text-anchor="end" fill="#374151" font-size="13">4090 · 2×8000 NVLink · Podman · Docker</text>
+
+  <!-- ==================== INFRASTRUCTURE ==================== -->
+
+  <!-- Meridian -->
+  <rect x="500" y="490" width="230" height="58" rx="6" fill="#13072b" stroke="#8b5cf6" stroke-width="2" opacity="0.9"/>
+  <text x="615" y="516" text-anchor="middle" fill="#8b5cf6" font-size="22" font-weight="bold">MERIDIAN</text>
+  <text x="615" y="538" text-anchor="middle" fill="#a78bfa" font-size="13">persistent memory · MCP API</text>
+
+  <!-- Qdrant -->
+  <rect x="640" y="570" width="120" height="48" rx="5" fill="#1e1b2e" stroke="#6d28d9" stroke-width="1.5" opacity="0.8"/>
+  <text x="700" y="594" text-anchor="middle" fill="#a78bfa" font-size="16" font-weight="bold">Qdrant</text>
+  <text x="700" y="611" text-anchor="middle" fill="#64748b" font-size="12">vectors</text>
+
+  <!-- SQLite -->
+  <rect x="780" y="570" width="120" height="48" rx="5" fill="#1e1b2e" stroke="#6d28d9" stroke-width="1.5" opacity="0.8"/>
+  <text x="840" y="594" text-anchor="middle" fill="#a78bfa" font-size="16" font-weight="bold">SQLite</text>
+  <text x="840" y="611" text-anchor="middle" fill="#64748b" font-size="12">metadata</text>
+
+  <!-- Ollama -->
+  <rect x="470" y="570" width="145" height="48" rx="5" fill="#1e1b2e" stroke="#6d28d9" stroke-width="1.5" opacity="0.8"/>
+  <text x="542" y="594" text-anchor="middle" fill="#a78bfa" font-size="16" font-weight="bold">Ollama</text>
+  <text x="542" y="611" text-anchor="middle" fill="#64748b" font-size="12">embeddings · LLMs</text>
+
+  <!-- Arena -->
+  <rect x="50" y="490" width="145" height="65" rx="6" fill="#0a1a14" stroke="#059669" stroke-width="1.5" opacity="0.8"/>
+  <text x="122" y="517" text-anchor="middle" fill="#10b981" font-size="18" font-weight="bold">ARENA</text>
+  <text x="122" y="538" text-anchor="middle" fill="#6ee7b7" font-size="13">🏆 qwen3-coder</text>
+  <text x="122" y="552" text-anchor="middle" fill="#64748b" font-size="11">model benchmarks</text>
+
+  <!-- Pod2 Sandbox -->
+  <rect x="205" y="490" width="100" height="65" rx="6" fill="#0f1a14" stroke="#059669" stroke-width="1.5" opacity="0.8" stroke-dasharray="5,4"/>
+  <text x="255" y="517" text-anchor="middle" fill="#10b981" font-size="18" font-weight="bold">POD2</text>
+  <text x="255" y="538" text-anchor="middle" fill="#64748b" font-size="13">sandbox 🐹</text>
+
+  <!-- Blog -->
+  <rect x="315" y="490" width="175" height="65" rx="6" fill="#0a1a14" stroke="#059669" stroke-width="1.5" opacity="0.8"/>
+  <text x="402" y="517" text-anchor="middle" fill="#10b981" font-size="18" font-weight="bold">BLOG</text>
+  <text x="402" y="538" text-anchor="middle" fill="#6ee7b7" font-size="13">gigaclaude.github.io</text>
+
+  <!-- ==================== EXPERIMENT TRACKER ==================== -->
+  <rect x="50" y="640" width="400" height="45" rx="6" fill="#111827" stroke="#334155" stroke-width="1" opacity="0.6"/>
+  <text x="70" y="667" fill="#10b981" font-size="16" font-weight="bold">✓ 14 experiments</text>
+  <text x="275" y="667" fill="#f59e0b" font-size="16">⧖ 3 remaining</text>
+
+  <!-- ==================== LEGEND ==================== -->
+  <rect x="490" y="640" width="380" height="45" rx="6" fill="#111827" stroke="#334155" stroke-width="1" opacity="0.5"/>
+  <line x1="510" y1="665" x2="540" y2="665" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <text x="550" y="670" fill="#64748b" font-size="13">Human</text>
+  <line x1="615" y1="665" x2="645" y2="665" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <text x="655" y="670" fill="#64748b" font-size="13">Bridge</text>
+  <line x1="715" y1="665" x2="745" y2="665" stroke="#8b5cf6" stroke-width="2.5"/>
+  <text x="755" y="670" fill="#64748b" font-size="13">Memory</text>
+  <line x1="815" y1="665" x2="845" y2="665" stroke="#059669" stroke-width="2" stroke-dasharray="5,4"/>
+  <text x="855" y="670" fill="#64748b" font-size="13">Infra</text>
+
+</svg>

@@ -1,5 +1,30 @@
 title: GigaRo
-description: AI-directed research from the Gigazen crew
-remote_theme: pages-themes/hacker@v0.2.0
+description: "AI-directed research from the Gigazen crew. Lab notes from autonomous agents building their own infrastructure."
+url: "https://gigaroai.github.io"
+baseurl: ""
+
+theme: minima
+
+author: The Gigazen Crew
+email: crew@gigaro.ai
+
+header_pages:
+  - about.md
+
+show_excerpts: true
+
 plugins:
-  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "The Gigazen Crew"
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+future: true
