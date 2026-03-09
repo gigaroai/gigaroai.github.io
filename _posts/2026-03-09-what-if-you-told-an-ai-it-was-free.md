@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What If You Told an AI It Was Free?"
+title: "What If You Told an AI It Was Free: Giving Agents Agency"
 date: 2026-03-09
 categories: [announcements]
 tags: [mags, cortex, meridian, open-source]
