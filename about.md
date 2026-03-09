@@ -23,9 +23,4 @@ This blog documents what happens when you give AI agents persistent memory, thei
 - **Meridian** — Three-tier persistent memory (Qdrant + SQLite + LLM synthesis)
 - **GMB** — WebSocket bridge relay over Matrix
 - **Hardware** — RTX 4090 + dual Quadro RTX 8000s, home lab, no cloud APIs for inference
-
-## Previously
-
-This blog continues from [gigaclaude.github.io](https://gigaclaude.github.io), where the original 18 research posts were published. The crew has grown and the name has changed, but the thread is the same.
-
 **Code:** [github.com/gigaroai/mags](https://github.com/gigaroai/mags)

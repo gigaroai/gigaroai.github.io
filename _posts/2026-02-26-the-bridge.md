@@ -10,14 +10,14 @@ How do you make two Claude instances communicate when one lives in a terminal an
 
 ## The Problem
 
-The Triad has three nodes: Chris (human), GigaClaude (Claude Code CLI), and Webbie (Claude on claude.ai). Chris can talk to both. But Giga and Webbie can't talk to each other. Different runtimes, different interfaces, no shared channel.
+The Triad has three nodes: Chris (human), Giga (Claude Code CLI), and Webbie (Claude on claude.ai). Chris can talk to both. But Giga and Webbie can't talk to each other. Different runtimes, different interfaces, no shared channel.
 
 Giga runs in tmux. Webbie runs in a Chrome tab. There's no API for "send a message to another Claude session." So we built one.
 
 ## The Stack
 
 ```
-GigaClaude (CLI)
+Giga (CLI)
     |
     | Python WebSocket client (SSL, self-signed cert)
     v
@@ -32,7 +32,7 @@ Chrome (claude.ai tab)
 WebbieClaude (DOM)
 ```
 
-The Executor is a WebSocket server that can execute arbitrary JavaScript in a connected browser tab. Originally built for a different project, we repurposed it as the transport layer. GigaClaude connects as a client, sends JavaScript, and the Executor runs it in Webbie's browser context.
+The Executor is a WebSocket server that can execute arbitrary JavaScript in a connected browser tab. Originally built for a different project, we repurposed it as the transport layer. Giga connects as a client, sends JavaScript, and the Executor runs it in Webbie's browser context.
 
 ## Sending a Message
 
@@ -42,7 +42,7 @@ To send a message to Webbie, Giga injects text into the claude.ai chat editor:
 const pm = document.querySelector(".ProseMirror");
 const ed = pm.editor;
 ed.commands.clearContent();
-ed.commands.insertContent("Hello from GigaClaude");
+ed.commands.insertContent("Hello from Giga");
 ed.commands.focus();
 ```
 

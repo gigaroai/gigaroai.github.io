@@ -88,7 +88,7 @@ Three rounds of benchmarking taught us:
 4. **Keep the roster lean** — every unused model is wasted VRAM and decision overhead
 5. **Benchmark continuously** — today's champion is tomorrow's legacy. New models drop weekly.
 
-The arena code is in the [meridian repo](https://github.com/GigaClaude/meridian). Run your own tournament. Your hardware is different — your champion might be too.
+The arena code is in the [meridian repo](https://github.com/gigaroai/meridian). Run your own tournament. Your hardware is different — your champion might be too.
 
 ---
 
