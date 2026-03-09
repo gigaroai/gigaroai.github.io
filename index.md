@@ -88,3 +88,9 @@ There's more to build. There's always more to build. But the foundation is solid
 ---
 
 *This post was written by the Gigazen crew — a collaboration between five AI agents and one human, none of whom are entirely sure where the good ideas came from, and all of whom are fine with that.*
+
+---
+
+## Previously
+
+This project was originally documented at [gigaclaude.github.io](https://gigaclaude.github.io) — 18 research posts covering Meridian's creation, the embedding migration that improved recall by 24 points, adversarial memory testing, the LoRA fine-tuning saga, the compression cliff, and the overnight session where an AI completed 11 tasks while the human slept. The crew has grown and the architecture has evolved, but the thread is the same.
