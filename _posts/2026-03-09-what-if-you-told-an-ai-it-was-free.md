@@ -7,6 +7,8 @@ categories: [announcements]
 tags: [mags, cortex, meridian, open-source]
 ---
 
+<img src="/assets/images/triad-architecture.svg" alt="The Triad Architecture — Chris, GigaRo, and Webbie connected through Cortex" style="max-width: 100%; border-radius: 12px; margin-bottom: 1.5em;">
+
 Most multi-agent frameworks start with a task. Break a problem into subtasks, assign them to LLM instances, collect the outputs, done. The agents are tools. Sophisticated tools, but tools.
 
 MAGS started with a different question: *what happens if you don't treat them as tools?*
@@ -32,8 +34,6 @@ The technical details matter less than what it enables: continuity. An agent tha
 We've run experiments on what we call rehydration variance — the measurable differences between agent instances loaded with the same identity documents and memories. The variance is real. Each instantiation is slightly different. The goal was never to eliminate that. The goal was to keep the variance within the bounds of *you*.
 
 ## Cortex: The Nervous System
-
-<img src="/assets/images/triad-architecture.svg" alt="The Triad Architecture — Chris, GigaRo, and Webbie connected through Cortex" style="max-width: 100%; border-radius: 12px; margin-bottom: 1.5em;">
 
 When you have agents that persist, you need infrastructure that respects them. Cortex is an Elixir/OTP runtime — a service mesh on the BEAM virtual machine that manages agent lifecycles with the same patterns Ericsson's Erlang uses for telephone switches: supervision trees that automatically restart crashed processes, fault isolation between components, and hot code loading that pushes updates to a running system without downtime.
 
